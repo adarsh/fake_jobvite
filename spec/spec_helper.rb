@@ -5,6 +5,7 @@ require 'rack/test'
 require 'rspec'
 require 'rest-client'
 require 'webmock'
+require 'pry'
 
 require 'fake_jobvite'
 
