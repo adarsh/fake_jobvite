@@ -3,11 +3,11 @@
 This library helps build against
 the JobVite API
 without hitting the live servers.
-It uses [Capybara::Discoball][1]
+It uses [WebMock][1]
 to intercept the external HTTP requests
 and return fake data.
 
-[1]: https://github.com/thoughtbot/capybara_discoball
+[1]: https://github.com/bblimke/webmock
 
 ## Synopsis
 
@@ -15,7 +15,6 @@ and return fake data.
 # Use Sinatra, for example
 require 'sinatra/base'
 require 'capybara_discoball'
-require 'fake_jobvite'
 
 # Here is our fake app
 class FakeJobvite < Sinatra::Base
