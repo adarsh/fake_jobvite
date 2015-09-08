@@ -11,27 +11,9 @@ and return fake data.
 
 [2]: https://github.com/bblimke/webmock
 
-## Synopsis
+## Usage
 
-```ruby
-# Use Sinatra, for example
-require 'sinatra/base'
-require 'capybara_discoball'
-
-# Here is our fake app
-class FakeJobvite < Sinatra::Base
-  get '/candidate' do |candidate|
-    # Load the XML fixture here
-  end
-end
-
-# Spin up the Rack app,
-# then update the imaginary library we're
-# using to point to the new URL.
-Capybara::Discoball.spin(FakeJobvite) do |server|
-  Jobvite.endpoint_url = server.url('/')
-end
-```
+This is not yet a gem, just a file so not ready for anyone to use.
 
 
 ## Endpoints
@@ -39,3 +21,7 @@ end
 ### Base URL
 
     https://api.jobvite.com/
+
+### Endpoints
+
+    GET /candidates
